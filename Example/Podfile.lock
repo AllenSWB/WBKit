@@ -1,0 +1,16 @@
+PODS:
+  - WBKit (0.1.0)
+
+DEPENDENCIES:
+  - WBKit (from `../`)
+
+EXTERNAL SOURCES:
+  WBKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WBKit: b5af592abccab66c2147b94c090818a5e92ac21e
+
+PODFILE CHECKSUM: 65bf497b9b49e84dff866320741c37322dbe7504
+
+COCOAPODS: 1.9.1

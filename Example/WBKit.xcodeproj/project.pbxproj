@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0669814AD629E70ACF16D8CB /* Pods_WBKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5887B0CDAF40ECF68AC4EA /* Pods_WBKit_Tests.framework */; };
 		1741220AAEF4302DAC230ED3 /* Pods_WBKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC36E6EED04D60B8D0A3196 /* Pods_WBKit_Example.framework */; };
+		36952B282462BF000013625E /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36952B272462BF000013625E /* Global.swift */; };
+		36C12B552462C0A6005EEE04 /* TestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C12B542462C0A6005EEE04 /* TestTableViewCell.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -28,10 +30,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		09365BF187B2A0C4B40E0467 /* WBKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WBKit.podspec; path = ../WBKit.podspec; sourceTree = "<group>"; };
+		09365BF187B2A0C4B40E0467 /* WBKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WBKit.podspec; path = ../WBKit.podspec; sourceTree = "<group>"; };
 		1FC36E6EED04D60B8D0A3196 /* Pods_WBKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WBKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34247B61F523DF7FFA5D057E /* Pods-WBKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-WBKit_Tests/Pods-WBKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		39091B84677AA830E2796959 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		36952B272462BF000013625E /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		36C12B542462C0A6005EEE04 /* TestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewCell.swift; sourceTree = "<group>"; };
+		39091B84677AA830E2796959 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* WBKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +46,7 @@
 		607FACE51AFB9204008FA782 /* WBKit_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WBKit_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		68C21B4B0B9DC5F665A46715 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		68C21B4B0B9DC5F665A46715 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6DF3DEEC792F3E2C0500512D /* Pods-WBKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-WBKit_Tests/Pods-WBKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C918566ADDD956274C1FCCD /* Pods-WBKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-WBKit_Example/Pods-WBKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B394D481BEBA83F1E09B273C /* Pods-WBKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBKit_Example.release.xcconfig"; path = "Target Support Files/Pods-WBKit_Example/Pods-WBKit_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -77,7 +81,6 @@
 				6DF3DEEC792F3E2C0500512D /* Pods-WBKit_Tests.debug.xcconfig */,
 				34247B61F523DF7FFA5D057E /* Pods-WBKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -107,6 +110,8 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				36C12B542462C0A6005EEE04 /* TestTableViewCell.swift */,
+				36952B272462BF000013625E /* Global.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -227,6 +232,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -332,7 +338,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				36C12B552462C0A6005EEE04 /* TestTableViewCell.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				36952B282462BF000013625E /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
