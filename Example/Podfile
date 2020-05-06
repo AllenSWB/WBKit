@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WBKit_Example' do
+  pod 'WBKit', :path => '../'
+
+  target 'WBKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
