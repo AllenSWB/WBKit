@@ -52,9 +52,10 @@ public extension UIView {
     
 }
 
-// MARK: hex 颜色
+// MARK: 颜色
 
 public extension UIColor {
+    /// hex 颜色
     convenience init?(hex_wb: String) {
         var hexSanitized = hex_wb.trimmingCharacters(in: .whitespacesAndNewlines)
         hexSanitized = hexSanitized.replacingOccurrences(of: "#", with: "")
@@ -87,6 +88,11 @@ public extension UIColor {
         
         self.init(red: r, green: g, blue: b, alpha: a)
     }
+    /// 随机颜色
+    class func random_wb() -> UIColor {
+        return UIColor.init(red: (CGFloat(arc4random()%255) / 255.0), green: (CGFloat(arc4random()%255) / 255.0), blue: (CGFloat(arc4random()%255) / 255.0), alpha: 1)
+    }
+    
 }
 
 // MARK: 创建有颜色的占位图
