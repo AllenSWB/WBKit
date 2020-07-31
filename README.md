@@ -17,7 +17,7 @@ WBKit is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'WBKit'
+pod 'WBKit', :git => 'https://github.com/AllenSWB/WBKit.git'
 ```
 
 ## Author
