@@ -154,3 +154,62 @@ public extension ReuseIdentifiable {
 
 extension UITableViewCell: ReuseIdentifiable {}
 extension UICollectionViewCell: ReuseIdentifiable {}
+
+ 
+
+// MARK: Date 日期
+public extension Date {
+    func toString_wb(f: String = "yyyy-MM-dd") -> String {
+        /*
+         G: 公元时代，例如AD公元
+         aa: 上下午，AM/PM
+         S：毫秒
+         
+         [dateStringFormatter setDateFormat:@"y"]; // 2017
+         [dateStringFormatter setDateFormat:@"yy"]; // 17
+         [dateStringFormatter setDateFormat:@"yyy"]; // 2017
+         [dateStringFormatter setDateFormat:@"yyyy"]; // 2017
+
+         [dateStringFormatter setDateFormat:@"M"]; // 8
+         [dateStringFormatter setDateFormat:@"MM"]; // 08
+         [dateStringFormatter setDateFormat:@"MMM"]; // 8月
+         [dateStringFormatter setDateFormat:@"MMMM"]; // 八月
+
+         [dateStringFormatter setDateFormat:@"d"]; // 3
+         [dateStringFormatter setDateFormat:@"dd"]; // 03
+         [dateStringFormatter setDateFormat:@"D"]; // 215,一年中的第几天
+
+         [dateStringFormatter setDateFormat:@"h"]; // 4
+         [dateStringFormatter setDateFormat:@"hh"]; // 04
+         [dateStringFormatter setDateFormat:@"H"]; // 16 24小时制，0-23
+         [dateStringFormatter setDateFormat:@"HH"]; // 16
+         [dateStringFormatter setDateFormat:@"K"]; // K：时，12小时制，0-11
+
+         [dateStringFormatter setDateFormat:@"m"]; // 28
+         [dateStringFormatter setDateFormat:@"mm"]; // 28
+         [dateStringFormatter setDateFormat:@"s"]; // 57
+         [dateStringFormatter setDateFormat:@"ss"]; // 04
+
+         [dateStringFormatter setDateFormat:@"E"]; // 周四
+         [dateStringFormatter setDateFormat:@"EEEE"]; // 星期四
+         [dateStringFormatter setDateFormat:@"EEEEE"]; // 四
+         [dateStringFormatter setDateFormat:@"e"]; // 5 (显示的是一周的第几天（weekday），1为周日。)
+         [dateStringFormatter setDateFormat:@"ee"]; // 05
+         [dateStringFormatter setDateFormat:@"eee"]; // 周四
+         [dateStringFormatter setDateFormat:@"eeee"]; // 星期四
+         [dateStringFormatter setDateFormat:@"eeeee"]; // 四
+
+         [dateStringFormatter setDateFormat:@"z"]; // GMT+8
+         [dateStringFormatter setDateFormat:@"zzzz"]; // 中国标准时间
+
+         [dateStringFormatter setDateFormat:@"ah"]; // 下午5
+         [dateStringFormatter setDateFormat:@"aH"]; // 下午17
+         [dateStringFormatter setDateFormat:@"am"]; // 下午53
+         [dateStringFormatter setDateFormat:@"as"]; // 下午52
+         */
+        let format = DateFormatter.init()
+        format.dateFormat = f
+        let result = format.string(from: self)
+        return result
+    }
+}

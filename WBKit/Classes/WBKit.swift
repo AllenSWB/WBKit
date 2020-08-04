@@ -109,7 +109,7 @@ public extension WBKit {
 
 // MARK: 沙盒路径
 
-extension WBKit {
+public extension WBKit {
     enum WBSandboxFolder {
         case home
         case documents
