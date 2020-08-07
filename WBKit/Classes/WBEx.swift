@@ -143,11 +143,11 @@ public extension Numeric {
 
 // 使用方法: tableView.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.reuseIdentifier())
 public protocol ReuseIdentifiable {
-    static func reuseIdentifier() -> String
+    static func wb_identifier() -> String
 }
 
 public extension ReuseIdentifiable {
-    static func reuseIdentifier() -> String {
+    static func wb_identifier() -> String {
         return String(describing: self)
     }
 }

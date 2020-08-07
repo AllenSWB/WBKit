@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         
         imgView.image = UIImage(color_wb: UIColor(hex_wb: "ff5500")!)
         
-        print("重用标识符：" + TestTableViewCell.reuseIdentifier())
+        print("重用标识符：" + TestTableViewCell.wb_identifier())
          
         self.view.backgroundColor = UIColor.random_wb()
 
