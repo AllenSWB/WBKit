@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+
+
 public class WBKit {
 }
 
@@ -110,6 +112,7 @@ public extension WBKit {
 // MARK: 沙盒路径
 
 public extension WBKit {
+    
     enum WBSandboxFolder {
         case home
         case documents
@@ -117,12 +120,12 @@ public extension WBKit {
         case cache
         case tmp
     }
-
-    func wb_sandboxMethod() -> ((WBSandboxFolder) -> (String)) {
+    
+    class func wb_sandboxMethod() -> ((WBSandboxFolder) -> (String)) {
         return wb_sandbox(_:)
     }
 
-    func wb_sandbox(_ folder: WBSandboxFolder = .documents) -> String {
+    class func wb_sandbox(_ folder: WBSandboxFolder = .documents) -> String {
         let path: String?
         switch folder {
         case .home:
